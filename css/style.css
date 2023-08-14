@@ -45,6 +45,10 @@ p {
     margin: 0;
 }
 
+button {
+    display: block;
+}
+
 body {
     background-color: var(--color-FFFFFF);
     font-family: "Roboto", sans-serif;
@@ -91,6 +95,15 @@ img {
     line-height: 24px;
     letter-spacing: 0.32px;
     color: var(--color-434455);
+}
+
+.third-title {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-2E2F42);
 }
 
 /**
@@ -410,6 +423,111 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-title {
+    margin: 72px 24px 16px;
+
+    color: var(--color-2E2F42);
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+}
+
+.modal-form-wrapper {
+    width: 360px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 4px;
+}
+
+.modal-form-label {
+    color: var(--color-8e8f99);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.modal-form-input {
+    width: 360px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--color-2E2F42, rgba(46, 47, 66, 0.4));
+}
+
+.modal-form-textarea {
+    width: 360px;
+    height: 120px;
+    flex-shrink: 0;
+
+    border-radius: 4px;
+    border: 1px solid var(--color-2E2F42, rgba(46, 47, 66, 0.4));
+}
+
+.modal-checkbox-paragraph {
+    display: flex;
+    width: 360px;
+    align-items: center;
+    gap: 8px;
+
+    border-radius: 4px;
+}
+
+.modal-paragraph {
+    color: var(--color-8e8f99);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+}
+
+.modal-paragraph a {
+    color: var(--color-4d5ae5);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+}
+
+.modal-btn-send {
+    width: 169px;
+    height: 56px;
+    margin: 0 auto;
+    padding: 16px 32px;
+
+    border-radius: 4px;
+    background: var(--color-4d5ae5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    color: var(--color-FFFFFF);
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
 /**
   |============================
   | Block footer
@@ -468,6 +586,7 @@ img {
 .footer-social-list {
     display: flex;
     gap: 16px;
+    margin-right: 80px;
 }
 
 .footer-social-svg {
@@ -496,6 +615,83 @@ img {
 
 .logo-studio {
     color: var(--color-2E2F42);
+}
+
+.subscribe-wrapper {
+    width: 453px;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.subscribe {
+    display: flex;
+    align-items: end;
+}
+
+.subscribe-label-input {
+    display: flex;
+    flex-direction: column;
+    margin-right: 24px;
+}
+
+.subscribe-label {
+    color: var(--color-FFFFFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+
+    margin-bottom: 16px;
+}
+
+#mail {
+    width: 264px;
+    height: 40px;
+    flex-shrink: 0;
+    padding: 8px;
+
+    background-color: var(--color-2E2F42);
+    border-radius: 4px;
+    border: 1px solid var(--color-FFFFFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+#mail::placeholder {
+    color: var(--color-FFFFFF);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */
+    letter-spacing: 0.48px;
+}
+
+.button {
+    height: 40px;
+    border: none;
+    width: 165px;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 4px;
+    background: var(--color-4d5ae5);
+
+    color: var(--color-FFFFFF);
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.64px;
+}
+
+.button svg {
+    fill: var(--color-FFFFFF);
 }
 
 /**
@@ -539,15 +735,6 @@ img {
 
 .center {
     text-align: center;
-}
-
-.third-title {
-    margin-bottom: 8px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--color-2E2F42);
 }
 
 .second-section,
