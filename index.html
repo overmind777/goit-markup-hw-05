@@ -621,29 +621,21 @@
                 <div class="subscribe-wrapper">
                     <p class="subscribe-paragraph">Subscribe</p>
                     <form class="subscribe-form">
-                        <div class="subscribe-label-input">
-                            <label class="subscribe-label" for="mail">
-                                <input
-                                    class="subscribe-input"
-                                    type="email"
-                                    name="mail"
-                                    id="mail"
-                                    placeholder="E-mail"
-                                />
-                            </label>
-                            <button type="submit" class="button">
-                                Subscribe
-                                <svg
-                                    class="subscribe-svg"
-                                    width="24"
-                                    height="24"
-                                >
-                                    <use
-                                        href="./images/icons.svg#icon-plane"
-                                    ></use>
-                                </svg>
-                            </button>
-                        </div>
+                        <label class="subscribe-label" for="mail">
+                            <input
+                                class="subscribe-input"
+                                type="email"
+                                name="mail"
+                                id="mail"
+                                placeholder="E-mail"
+                            />
+                        </label>
+                        <button type="submit" class="button">
+                            Subscribe
+                            <svg class="subscribe-svg" width="24" height="24">
+                                <use href="./images/icons.svg#icon-plane"></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -657,18 +649,20 @@
                         <use href="./images/icons.svg#close"></use>
                     </svg>
                 </button>
-                <h3 class="third-title modal-title">
+                <p class="footer-paragraph modal-title">
                     Leave your contacts and we will call you back
-                </h3>
-                <div class="modal-form-wrapper">
-                    <form class="modal-form">
+                </p>
+                <form class="modal-form">
+                    <div class="modal-form-wrapper">
                         <label class="modal-form-label" for="name">Name</label>
-                        <input
-                            class="modal-form-input"
-                            type="text"
-                            name="name"
-                            id="name"
-                        />
+                        <div class="modal-form-input">
+                            <input
+                                class="modal-input"
+                                type="text"
+                                name="user-name"
+                                id="user-name"
+                            />
+                        </div>
                         <label class="modal-form-label" for="phone"
                             >Phone</label
                         >
@@ -707,8 +701,8 @@
                         <button class="modal-btn-send" type="submit">
                             Send
                         </button>
-                    </form>
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
 
