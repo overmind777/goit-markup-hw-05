@@ -707,20 +707,20 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="modal-input-wrapper">
-                        <label class="modal-form-label" for="textarea"
+                    <div class="modal-textarea-wrapper">
+                        <label class="modal-form-label" for="user-comment"
                             >Comment</label
                         >
                         <textarea
                             class="modal-form-textarea"
-                            name="textarea"
-                            id="textarea"
+                            name="user-comment"
+                            id="user-comment"
                             cols="30"
                             rows="10"
                             placeholder="Text input"
                         ></textarea>
                     </div>
-                    <div class="modal-checkbox-paragraph">
+                    <div class="modal-checkbox-wrapper">
                         <input
                             class="modal-checkbox visually-hidden"
                             type="checkbox"
@@ -730,7 +730,14 @@
                         />
                         <label class="modal-policy-label" for="user-privacy">
                             I accept the terms and conditions of the
-                            <span class="policy-span">Privacy Policy</span>
+                            <span class="policy-span">
+                                <a href="#">Privacy Policy</a>
+                                <svg class="checkbox" width="10" height="8">
+                                    <use
+                                        href="./images/icons.svg#checkbox"
+                                    ></use>
+                                </svg>
+                            </span>
                         </label>
                     </div>
                     <button class="modal-btn-send" type="submit">Send</button>
