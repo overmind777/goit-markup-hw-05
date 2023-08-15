@@ -438,10 +438,7 @@ img {
     color: var(--color-2E2F42);
 }
 
-.modal-form-wrapper {
-    width: 360px;
-    margin-left: 24px;
-    margin-right: 24px;
+.form-wrapper {
     margin-bottom: 8px;
 }
 
