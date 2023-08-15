@@ -350,7 +350,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 72px 24px 24px 24px;
 
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -381,6 +380,8 @@ img {
     transform: translate(-50%, -50%) scale(1);
     width: 408px;
     min-height: 584px;
+
+    padding: 72px 24px 24px 24px;
 
     background-color: var(--color-FCFCFC);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -441,6 +442,7 @@ img {
     width: 360px;
     margin-left: 24px;
     margin-right: 24px;
+    margin-bottom: 8px;
 }
 
 .modal-form {
@@ -458,16 +460,17 @@ img {
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0.48px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
 }
 
 .modal-form-input {
-    width: 360px;
+    position: relative;
+    /* width: 360px;
     height: 40px;
     flex-shrink: 0;
     border-radius: 4px;
-    border: 1px solid var(--color-2E2F42, rgba(46, 47, 66, 0.4));
+    border: 1px solid var(--color-2E2F42, rgba(46, 47, 66, 0.4)); */
 }
 
 .modal-form-textarea {
@@ -656,6 +659,7 @@ img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 
+    border: 1px solid var(--color-FFFFFF);
     background-color: transparent;
     font-size: 12px;
     line-height: 1.5;
@@ -674,7 +678,7 @@ img {
 
 .button {
     height: 40px;
-    width: 165px;
+    min-width: 165px;
     display: flex;
     justify-content: center;
     align-items: center;
