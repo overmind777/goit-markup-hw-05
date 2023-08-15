@@ -47,6 +47,7 @@ p {
 
 button {
     display: block;
+    border: none;
 }
 
 body {
@@ -426,16 +427,15 @@ img {
 }
 
 .modal-title {
-    margin: 72px 24px 16px;
-
-    color: var(--color-2E2F42);
     text-align: center;
+    margin-bottom: 16px;
 
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.32px;
+    color: var(--color-2E2F42);
 }
 
 .modal-form-wrapper {
@@ -448,39 +448,74 @@ img {
 .modal-form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 8px;
 
     border-radius: 4px;
 }
 
 .modal-form-label {
-    color: var(--color-8e8f99);
+    margin-bottom: 4px;
 
+    color: var(--color-8e8f99);
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
 
-.modal-form-input {
+.modal-input-wrapper {
     position: relative;
-    /* width: 360px;
     height: 40px;
-    flex-shrink: 0;
+    margin-bottom: 8px;
+
     border-radius: 4px;
-    border: 1px solid var(--color-2E2F42, rgba(46, 47, 66, 0.4)); */
+    border: 1px solid var(--color-2E2F42, rgba(46, 47, 66, 0.4));
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    padding: 11px;
+    padding-left: 38px;
+
+    font-size: 18px;
+}
+
+.modal-input-svg {
+    position: absolute;
+    top: 50%;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+    transform: translateY(-50%);
 }
 
 .modal-form-textarea {
     width: 360px;
     height: 120px;
     flex-shrink: 0;
+    padding: 8px 16px;
+    margin-bottom: 16px;
 
     border-radius: 4px;
     border: 1px solid var(--color-2E2F42, rgba(46, 47, 66, 0.4));
+
+    color: var(--color-2E2F42), rgba(46, 47, 66, 0.4);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
 }
+
+/* .modal-form-textarea::placeholder {
+    color: var(--color-2E2F42), rgba(46, 47, 66, 0.4);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
+} */
 
 .modal-checkbox-paragraph {
     display: flex;
